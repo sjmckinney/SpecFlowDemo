@@ -1,0 +1,13 @@
+Scoped Bindings
+Where step defintions have the same name the ambiguity that results will prevent tests from running
+This ambiguity might be resolved by assigning a Scope attribute based on one of the following;
+Features
+Scenarios
+Tags
+[Given(@"This is a duplicate step definition name")]
+[Scope(Feature = "Distinct_Feature_Name"]
+public void GivenThisIsADuplicateStepDefinitonName()
+{
+   //Some code
+}
+

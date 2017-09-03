@@ -1,0 +1,9 @@
+ContextInjection
+CI is a simple dependency framework supported by SpecFLow
+Can instantiate and inject an instance of a class into a scenario
+It enables data sharing between two binding classes i.e. step definition classes that are used in different steps of the same scenario
+To use CI we do the following
+a. Create a POCO to hold the shared data
+b. Within each binding class defined shared class as constructor parameter
+c. Save the constructor parameter to an instance field in the binding classes so can be used in step definitions
+
