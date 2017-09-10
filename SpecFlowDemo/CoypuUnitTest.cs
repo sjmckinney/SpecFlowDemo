@@ -23,6 +23,9 @@ namespace SpecFlowDemo
             Console.WriteLine($"browser configuration: {browser}");
             var selenium = ((OpenQA.Selenium.Remote.RemoteWebDriver)browser.Native);
             Console.WriteLine($"Underlying IWebDriver object configuration: {selenium}");
+            //Breakpoint
+            //Inspect extended values of objects in debug immediate window
+            //Thread.Sleep(100);
         }
 
         public void AfterTest()
